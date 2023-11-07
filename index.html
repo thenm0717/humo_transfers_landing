@@ -1,17 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Humo Transfers</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.min.css" />
+  </head>
 
-<body>
-    <header class="header-wrapper"></header>
-    <main class="main-wrapper"></main>
-    <footer class="footer-wrapper"></footer>
-</body>
+  <body>
+    <header class="header">
+      <nav class="header__menu menu">
+        <a href="" class="header__link">
+          <img src="img/logo/humo-logo.png" alt="" class="header__logo" />
+        </a>
+        <select name="languages" class="header__select">
+          <option value="en" class="header__select-elem">English</option>
+          <option
+            selected
+            value="ru"
+            class="header__select-elem header__select-elem_active"
+          >
+            Русский
+          </option>
+          <option value="tj" class="header__select-elem">Тоҷикӣ</option>
+          <option value="uz" class="header__select-elem">O'zbek</option>
+        </select>
+      </nav>
+    </header>
 
+    <main class="main">
+      <section class="promo">
+        <div class="container">
+          <div class="promo__wrapper">
+            <img src="" alt="" class="promo__img-left" />
+            <div class="promo__content">
+              <h1 class="promo__title-h1">
+                Одно приложение, для всех переводов
+              </h1>
+              <p class="promo__subtitle">
+                Переводите деньги в 20+ страну мира через популярные платежные
+                системы
+              </p>
+              <button class="promo__btn" type="button">Скачать</button>
+            </div>
+            <img src="" alt="" class="promo__img-right" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
 </html>

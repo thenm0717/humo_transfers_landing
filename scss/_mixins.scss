@@ -1,0 +1,69 @@
+//Containers
+@mixin XXL {
+  max-width: 1200px;
+  height: auto;
+}
+
+@mixin XL {
+  max-width: 992px;
+  height: auto;
+}
+
+@mixin L {
+  max-width: 768px;
+  height: auto;
+}
+
+@mixin M {
+  max-width: 576px;
+  height: auto;
+}
+
+@mixin S {
+  max-width: 320px;
+  height: auto;
+}
+
+//FLEX-BOX
+@mixin FLEX-BOX {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//TEXT-STYLES
+@mixin h1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: center;
+  color: $TEXT-BLACK;
+}
+
+@mixin p1 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  color: $TEXT-BLACK;
+}
+
+@mixin p2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  text-align: center;
+  color: $TEXT-BLACK;
+}
+
+//COMPONENTS
+@mixin primary-btn {
+  min-width: 200px;
+  height: auto;
+  padding: 20px 40px;
+  background-color: $BG-BRAND-COLOR;
+  @include p2;
+  color: $TEXT-WHITE;
+  border-radius: 32px;
+  border: none;
+}
