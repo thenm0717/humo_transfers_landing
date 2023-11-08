@@ -1,3 +1,12 @@
+@import "./variables";
+
+// CONTAINERS
+@mixin container($container_size: $extraLarge) {
+  width: $container_size;
+  display: block;
+  margin: 0 auto;
+}
+
 // FLEX-BOX
 @mixin flex(
   $flex_direction: column,
@@ -11,6 +20,21 @@
 }
 
 // TEXT-STYLES
+
+@mixin font(
+  $font_style: 16px,
+  $font_weight: 400,
+  //$font_style: normal,
+  $line_height: 130%,
+  $color_style: $textBlack
+) {
+  font-size: $font_style;
+  font-weight: $font_weight;
+  //font-style: $font_style;
+  line-height: $line_height;
+  color: $color_style;
+}
+
 @mixin h1 {
   font-size: 80px;
   font-weight: 700;

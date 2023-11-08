@@ -51,6 +51,10 @@ body {
 .hero {
   margin-top: 60px;
 
+  &__container {
+    @include container($extraLarge);
+  }
+
   &__wrapper {
     @include flex(row, space-between, center);
   }
@@ -87,5 +91,64 @@ body {
 
   &__btn {
     @include primary-btn;
+  }
+}
+
+// ADVANTAGE
+.advantage {
+  margin-top: 130px;
+
+  &__container {
+    @include container($extraLarge);
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 590px);
+    grid-template-rows: repeat(2, 620px);
+    gap: 32px;
+  }
+
+  &__cards {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    border-radius: 32px;
+    background: $bgWhite;
+    position: relative;
+    @include flex(column, space-between, center);
+  }
+
+  &__cards-title-wrapper {
+    display: block;
+    width: 100%;
+  }
+
+  &__cards-title {
+    @include font(56px, 700, 100%, $textBlack);
+  }
+
+  &__cards-img-wrapper {
+    max-width: 320xp;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    &:first-child {
+      position: relative;
+    }
+  }
+
+  &__cards-img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__course {
+    background: $bgBrand;
+  }
+
+  &__course-title {
+    @include font(70px, 700, 100%, $textWhite);
   }
 }
