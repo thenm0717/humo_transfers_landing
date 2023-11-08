@@ -12,7 +12,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 
-  background-color: $BG-MAIN;
+  background-color: $bgMain;
   font-family: "Golos Text", sans-serif;
 }
 
@@ -21,16 +21,15 @@ body {
   background: rgba(255, 255, 255, 0.32);
   box-shadow: 0px 17px 24px 0px rgba(50, 52, 56, 0.04);
   backdrop-filter: blur(20px);
-  position: absolute;
-  top: 40px;
-  left: 20%;
+  display: block;
+  margin: 40px auto 0 auto;
   width: 900px;
   height: auto;
   border-radius: 100px;
   padding: 16px 20px;
 
   &__menu {
-    @include FLEX-BOX;
+    @include flex(row, space-between, center);
   }
 
   &__select {
@@ -38,7 +37,7 @@ body {
     width: 170px;
     height: 48px;
     padding: 8px 12px;
-    background-color: $BG-WHITE;
+    background-color: $bgWhite;
     border-radius: 100px;
     border: none;
   }
@@ -48,16 +47,33 @@ body {
   }
 }
 
-//PROMO
-.promo {
-  margin-top: 200px;
+//HERO
+.hero {
+  margin-top: 60px;
+
+  &__wrapper {
+    @include flex(row, space-between, center);
+  }
+
+  &__img-wrapper {
+    max-width: 340px;
+    max-height: 580px;
+  }
+
+  &__imgLeft,
+  &__imgRight {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+  }
 
   &__content {
     max-width: 870px;
     height: auto;
-    @include FLEX-BOX;
-    flex-direction: column;
+    @include flex(column, space-between, center);
     gap: 32px;
+    z-index: 8;
   }
 
   &__title-h1 {

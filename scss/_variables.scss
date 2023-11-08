@@ -1,9 +1,16 @@
-//BG-COLORS
-$BG-MAIN: #f3f4f5;
-$BG-BRAND-COLOR: #ff5a1e;
-$BG-WHITE: #fff;
+// BG-COLORS
+$bgMain: #f3f4f5;
+$bgBrand: #ff5a1e;
+$bgWhite: #fff;
 
-//TEXT-COLORS
-$TEXT-BLACK: #2d2d2d;
-$TEXT-GREY: #a8a8a8;
-$TEXT-WHITE: #fff;
+// TEXT-COLORS
+$textBlack: #2d2d2d;
+$textGrey: #a8a8a8;
+$textWhite: #fff;
+
+// BREAKPOINTS
+$breakPoint-extraLarge: 1200px;
+$breakPoint-large: 992px;
+$breakPoint-medium: 768px;
+$breakPoint-small: 576px;
+$breakPoint-extraSmall: 320px;
