@@ -109,46 +109,50 @@ body {
     gap: 32px;
   }
 
-  &__cards {
+  &__card {
     width: 100%;
     height: 100%;
-    padding: 40px;
+    padding: 40px 40px 0 40px;
     border-radius: 32px;
     background: $bgWhite;
     position: relative;
     @include flex(column, space-between, center);
-  }
 
-  &__cards-title-wrapper {
-    display: block;
-    width: 100%;
-  }
-
-  &__cards-title {
-    @include font(56px, 700, 100%, $textBlack);
-  }
-
-  &__cards-img-wrapper {
-    max-width: 320xp;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    &:first-child {
-      position: relative;
+    &_another {
+      background: $bgBrand;
+      padding-bottom: 40px;
     }
   }
 
-  &__cards-img {
-    width: 100%;
-    height: auto;
+  &__card-title {
+    @include font(56px, 700, 100%, $textBlack);
+
+    &_another {
+      @include font(70px, 700, 100%, $textWhite);
+    }
   }
 
-  &__course {
-    background: $bgBrand;
-  }
+  &__card-img {
+    width: 470px;
+    height: 340px;
 
-  &__course-title {
-    @include font(70px, 700, 100%, $textWhite);
+    &_another {
+      width: auto;
+      height: auto;
+    }
+
+    &_positionLeft {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
   }
+}
+
+// FEEDBACKS
+.feedbacks {
+  margin-top: 130px;
+  background: $bgDark;
+  width: 100vw;
+  height: 1200px;
 }
