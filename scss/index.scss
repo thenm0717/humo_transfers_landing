@@ -16,7 +16,7 @@ body {
   font-family: "Golos Text", sans-serif;
 }
 
-//HEADER
+//  HEADER
 .header {
   background: rgba(255, 255, 255, 0.32);
   box-shadow: 0px 17px 24px 0px rgba(50, 52, 56, 0.04);
@@ -47,7 +47,7 @@ body {
   }
 }
 
-//HERO
+//  HERO
 .hero {
   margin-top: 60px;
 
@@ -94,7 +94,7 @@ body {
   }
 }
 
-// ADVANTAGE
+//  ADVANTAGE
 .advantage {
   margin-top: 130px;
 
@@ -192,6 +192,63 @@ body {
   }
 
   &__card-subtitle {
-    @include font(36px, 700, normal, center, 100%, $textBlack);
+    @include font(36px, 700, 100%, $textBlack);
+    text-align: center;
+  }
+}
+
+//  MAKETRANSFER
+.makeTransfer {
+  margin-top: 130px;
+
+  &__container {
+    @include container($extraLarge);
+  }
+
+  &__h2-title {
+    @include h2-title;
+  }
+
+  &__wrapper {
+    margin-top: 56px;
+    @include flex(row, space-between, flex-start);
+    gap: 40px;
+  }
+
+  &__card {
+    width: 580px;
+    height: 780px;
+    background: $bgWhite;
+    border-radius: 32px;
+    padding: 32px;
+
+    &_another {
+      @include flex(row, space-between, flex-start);
+      height: 370px;
+    }
+  }
+
+  &__card-title {
+    @include font(32px, 700, 100%, $textBlack);
+    margin-bottom: 16px;
+  }
+
+  &__card-subtitle {
+    @include font(18px, 500, 130%, $textBlack);
+    margin-bottom: 32px;
+  }
+
+  &__card-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__wrapperRight {
+    @include flex(column, space-between, center);
+    gap: 40px;
+  }
+
+  &__card-contentWrapper {
+    width: 370px;
   }
 }

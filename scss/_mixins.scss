@@ -24,15 +24,11 @@
 @mixin font(
   $font_size: 16px,
   $font_weight: 400,
-  $font_style: normal,
-  $text_align: normal,
   $line_height: 130%,
   $color_style: $textBlack
 ) {
   font-size: $font_size;
   font-weight: $font_weight;
-  font-style: $font_style;
-  text-align: $text_align;
   line-height: $line_height;
   color: $color_style;
 }
