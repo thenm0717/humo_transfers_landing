@@ -149,10 +149,49 @@ body {
   }
 }
 
-// FEEDBACKS
+//  FEEDBACKS
 .feedbacks {
   margin-top: 130px;
   background: $bgDark;
-  width: 100vw;
+  // width: 100vw;
   height: 1200px;
+}
+
+//  ABOUTAPP
+.aboutApp {
+  margin-top: 130px;
+  height: auto;
+
+  &__container {
+    @include container($extraLarge);
+  }
+
+  &__h2-title {
+    @include h2-title;
+  }
+
+  &__wrapper {
+    @include flex(row, space-between, center);
+    gap: 30px;
+    margin-top: 56px;
+  }
+
+  &__card {
+    background: $bgWhite;
+    padding: 40px;
+    border-radius: 32px;
+    width: 380px;
+    height: 380px;
+  }
+
+  &__card-img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto 40px auto;
+  }
+
+  &__card-subtitle {
+    @include font(36px, 700, normal, center, 100%, $textBlack);
+  }
 }
