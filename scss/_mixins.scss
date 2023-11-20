@@ -41,21 +41,6 @@
   color: $textBlack;
 }
 
-@mixin p1 {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 130%;
-  color: $textBlack;
-}
-
-@mixin p2 {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 130%;
-  text-align: center;
-  color: $textBlack;
-}
-
 @mixin h2-title {
   font-size: 64px;
   font-weight: 600;
@@ -70,8 +55,7 @@
   height: auto;
   padding: 20px 40px;
   background-color: $bgBrand;
-  @include p2;
-  color: $textWhite;
+  @include font(20px, 500, 130%, $textWhite);
   border-radius: 32px;
   border: none;
 }
